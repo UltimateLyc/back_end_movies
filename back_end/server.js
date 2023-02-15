@@ -22,6 +22,7 @@ app.use(express.json())
 // Endpoints
 app.use('/api/actors', require('./routes/actoresRoutes'))
 app.use('/api/directors', require('./routes/directoresRoutes'))
+app.use('/api/movies', require('./routes/moviesRoutes'))
 
 // Middleware
 app.use(errorHandler)
