@@ -18,5 +18,8 @@ const app = express()
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
+// Endpoints
+app.use('/api/actors', require('./routes/actoresRoutes'))
+
 // Conexion al puerto asignado
 app.listen(port, () => console.log(`Server started on port ${port}`))

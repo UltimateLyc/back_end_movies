@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const actorSchema = mongoose.Schema({
-    neme: {
+    name: {
         type: String,
         required: true
     },
