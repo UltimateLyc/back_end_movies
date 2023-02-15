@@ -20,6 +20,7 @@ app.use(express.json())
 
 // Endpoints
 app.use('/api/actors', require('./routes/actoresRoutes'))
+app.use('/api/directors', require('./routes/directoresRoutes'))
 
 // Conexion al puerto asignado
 app.listen(port, () => console.log(`Server started on port ${port}`))

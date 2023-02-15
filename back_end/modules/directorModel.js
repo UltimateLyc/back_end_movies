@@ -11,7 +11,7 @@ const directorSchema = mongoose.Schema({
         required: true
     }
 }, {
-    timestamp: true
+    timestamps: true
 })
 
-module.exports = mongoose.model('Actor', directorSchema)
+module.exports = mongoose.model('Director', directorSchema)
